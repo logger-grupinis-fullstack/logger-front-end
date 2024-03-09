@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+main {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1,
+h2,
+a,
+p {
+  font-family: monospace;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.mainImg {
+  max-width: 850px;
+  width: 100%;
+}
+
+.loginForm {
+  margin: 0 auto;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.loginForm__userInput {
+  border: 2px solid rgb(105, 78, 211);
+  height: 35px;
+  padding-left: 15px;
+}
+
+.loginForm__userInput::placeholder {
+  padding-left: 15px;
+  color: rgb(136, 136, 136);
+}
+
+.loginForm__submintContainer--button {
+  border: none;
+  background-color: rgb(105, 78, 211);
+  height: 35px;
+  border-radius: 30px;
+  color: white;
+}
+
+.loginForm__submintContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loginForm__submintContainer--button {
+  width: 150px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(105, 78, 211);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .mainImg {
+    min-width: 600px;
+    max-width: 900px;
+    width: 100%;
+  }
+
+  .loginForm {
+    margin: 0 auto;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .loginForm__userInput {
+    border: 2px solid rgb(105, 78, 211);
+    height: 45px;
+    padding-left: 15px;
+  }
+
+  .loginForm__userInput::placeholder {
+    padding-left: 15px;
+    color: rgb(136, 136, 136);
+  }
+
+  .loginForm__submintContainer--button {
+    border: none;
+    background-color: rgb(105, 78, 211);
+    height: 45px;
+    border-radius: 30px;
+    color: white;
+  }
+
+  .loginForm__submintContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .loginForm__submintContainer--button {
+    width: 200px;
+  }
+
+  .loginForm__submintContainer--link {
+    font-size: 15px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  main {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 25px solid rgb(105, 78, 211);
+  }
+
+  .mainImg {
+    min-width: 600px;
+    max-width: 900px;
+    width: 100%;
+  }
+
+  .mainSecondImg {
+    min-width: 600px;
+    max-width: 900px;
+    width: 100%;
+  }
+
+  .loginForm {
+    margin: 0 auto;
+    min-width: 400px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .loginForm__userInput {
+    border: 2px solid rgb(105, 78, 211);
+    height: 45px;
+    padding-left: 15px;
+  }
+
+  .loginForm__userInput::placeholder {
+    padding-left: 15px;
+    color: rgb(136, 136, 136);
+  }
+
+  .loginForm__submintContainer--button {
+    border: none;
+    background-color: rgb(105, 78, 211);
+    height: 45px;
+    border-radius: 30px;
+    color: white;
+  }
+
+  .loginForm__submintContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .loginForm__submintContainer--button {
+    width: 200px;
+  }
+
+  .loginForm__submintContainer--link {
+    font-size: 15px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
