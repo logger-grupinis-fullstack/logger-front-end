@@ -9,29 +9,41 @@
   <body>
     <header>
       <h1 class="headerTop">Fancy logger</h1>
-      <p>New User? <a href="register.html">Sign Up</a></p>
+      <p>Already a User? <a href="logIn.html">Log in</a></p>
     </header>
     <main>
       <img src="img/first.jpg" class="mainImg" alt="pageImage" />
-      <form action="" class="loginForm">
-        <h2 class="loginForm__header">Please Login</h2>
+      <form action="" class="loginForm" id="registerForm">
+        <h2 class="loginForm__header">Register</h2>
         <input
           type="text"
           class="loginForm__userInput"
+          id="regForm__username"
           placeholder="Username"
+        />
+        <input
+          type="email"
+          class="loginForm__userInput"
+          id="regForm__email"
+          placeholder="Email"
         />
         <input
           type="password"
           class="loginForm__userInput"
+          id="regForm__pass"
           placeholder="Password"
+        />
+        <input
+          type="password"
+          class="loginForm__userInput"
+          id="regForm__passRepeat"
+          placeholder="Repeat Password"
         />
         <div class="loginForm__submintContainer">
           <button type="submit" class="loginForm__submintContainer--button">
-            Login
+            Register
           </button>
-          <a href="" class="loginForm__submintContainer--link"
-            >Forgot Password?</a
-          >
+          
         </div>
       </form>
     </main>
