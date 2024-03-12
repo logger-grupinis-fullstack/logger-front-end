@@ -9,7 +9,7 @@
   <body>
     <header>
       <h1 class="headerTop">Fancy logger</h1>
-      <p>Already a User? <a href="logIn.html">Log in</a></p>
+      <p>Already a User? <a href="index.html">Log in</a></p>
     </header>
     <main>
       <img src="img/first.jpg" class="mainImg" alt="pageImage" />
@@ -20,35 +20,51 @@
           class="loginForm__userInput"
           id="regForm__username"
           placeholder="Username"
+          required
         />
         <input
           type="email"
           class="loginForm__userInput"
           id="regForm__email"
           placeholder="Email"
+          required
         />
         <input
           type="password"
           class="loginForm__userInput"
           id="regForm__pass"
           placeholder="Password"
+          required
         />
         <input
           type="password"
           class="loginForm__userInput"
           id="regForm__passRepeat"
           placeholder="Repeat Password"
+          required
         />
+        <p class="password_message message_failed hidden">
+          ❌ Password do NOT match !
+        </p>
+        <p class="email_message message_failed hidden">
+          ❌ This Email is already in use ! ✉️
+        </p>
         <div class="loginForm__submintContainer">
           <button type="submit" class="loginForm__submintContainer--button">
             Register
           </button>
-          
         </div>
       </form>
+
+      <div class="register_success hidden">
+        <h1>✅ Your registration was successfull !</h1>
+      </div>
+      <div class="overlay hidden"></div>
     </main>
     <footer>
       <p>&copy;2024 All rights reserved</p>
     </footer>
+
+    <script src="register.js"></script>
   </body>
 </html>
